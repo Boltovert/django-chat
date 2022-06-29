@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div style="height: 100vh" class="d-flex justify-content-center align-items-center">
+        <a href='{% url 'register' %}'><h1>Регистрация</h1></a>
+        <a href='{% url 'login' %}'><h1>Вход</h1></a>
+    </div>
+{% endblock %}
